@@ -388,6 +388,9 @@ double cv::kmeans( InputArray _data, int K,
                         }
                     }
 
+					if (farthest_i < 0)
+						return farthest_i;
+
                     counters[max_k]--;
                     counters[k]++;
                     labels[farthest_i] = k;
