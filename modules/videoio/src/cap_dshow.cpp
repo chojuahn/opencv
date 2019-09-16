@@ -116,7 +116,7 @@ Thanks to:
 #include "bdaiface.h"
 
 //for threading
-#include <process.h>
+#include <../ucrt/process.h>
 
 //this is for TryEnterCriticalSection
 #ifndef _WIN32_WINNT
